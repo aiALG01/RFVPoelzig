@@ -9,27 +9,6 @@ function toggleMenu() {
   }
 }
 
-// Hero video pause/play control (index.html) — required so the autoplaying,
-// looping hero clip has a user-operable stop, not just autoplay forever.
-var HERO_ICON_PAUSE = '<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z" /></svg>';
-var HERO_ICON_PLAY = '<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14l12-7z" /></svg>';
-
-function toggleHeroVideo(button) {
-  var video = document.getElementById("hero-video");
-  if (!video) return;
-  if (video.paused) {
-    video.play();
-    button.setAttribute("aria-label", "Video pausieren");
-    button.dataset.state = "playing";
-    button.innerHTML = HERO_ICON_PAUSE;
-  } else {
-    video.pause();
-    button.setAttribute("aria-label", "Video abspielen");
-    button.dataset.state = "paused";
-    button.innerHTML = HERO_ICON_PLAY;
-  }
-}
-
 // Impressionen slider (index.html) — horizontal scroll-snap carousel driven
 // by two arrow buttons; native touch/trackpad scroll and keyboard scrolling
 // keep working on their own since it's a real scroll container, not a
