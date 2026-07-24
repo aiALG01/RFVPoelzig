@@ -47,11 +47,9 @@
     });
   }
 
-  function revealStagger(container, opts, childSelector) {
+  function revealStagger(container, opts) {
     if (!container) return;
-    var children = childSelector
-      ? Array.prototype.slice.call(container.querySelectorAll(childSelector))
-      : Array.prototype.slice.call(container.children);
+    var children = Array.prototype.slice.call(container.children);
     if (!children.length) return;
     children.forEach(function (c) {
       c.style.opacity = "0";
@@ -76,11 +74,6 @@
 
     document.querySelectorAll('[data-animate="reveal"]').forEach(function (el) { reveal(el); });
     document.querySelectorAll('[data-animate="stagger"]').forEach(function (el) { revealStagger(el); });
-
-    // Hero photo collage (index.html): tiles get redistributed into balanced
-    // columns by hero-collage.js, so reveal every <img> descendant rather
-    // than the container's direct children.
-    revealStagger(document.getElementById("hero-collage"), { duration: 0.45 }, "img");
 
     // Timeline entries (geschichte.html): each reveals as it individually
     // scrolls into view, plus a small "pop" on its marker dot.
