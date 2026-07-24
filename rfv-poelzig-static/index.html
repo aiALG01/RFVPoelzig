@@ -49,27 +49,31 @@
 
 <section id="main" class="relative overflow-hidden bg-navy-900">
   <div class="mx-auto max-w-7xl px-6 py-20 lg:py-28">
-    <div class="max-w-xl" data-animate="hero">
-      <p class="mb-4 font-script text-3xl italic text-gold">Willkommen bei uns</p>
-      <h1 class="font-serif text-5xl leading-[1.05] text-white md:text-6xl">
-        Reit- und Fahrverein
-        <span class="block text-gold">Pölzig und Umgebung</span>
-      </h1>
-      <p class="mt-6 max-w-lg text-lg leading-relaxed text-white/85">
-        Reiten und Fahren mit Herz: Wir sind ein aktiver Verein rund um Pölzig
-        mit Turnieren, gemeinsamen Ausritten und einer starken Gemeinschaft
-        aus Pferdefreunden jeden Alters.
-      </p>
-      <div class="mt-8 flex flex-wrap gap-4">
-        <a href="verein.html" class="inline-block rounded-lg bg-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-charcoal transition hover:bg-gold-hover">Über uns</a>
-        <a href="kontakt.html" class="inline-block rounded-lg border border-white/30 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-white/10">Mitglied werden</a>
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-8">
+      <div class="max-w-xl" data-animate="hero">
+        <p class="mb-4 font-script text-3xl italic text-gold">Willkommen bei uns</p>
+        <h1 class="font-serif text-5xl leading-[1.05] text-white md:text-6xl">
+          Reit- und Fahrverein
+          <span class="block text-gold">Pölzig und Umgebung</span>
+        </h1>
+        <p class="mt-6 max-w-lg text-lg leading-relaxed text-white/85">
+          Reiten und Fahren mit Herz: Wir sind ein aktiver Verein rund um Pölzig
+          mit Turnieren, gemeinsamen Ausritten und einer starken Gemeinschaft
+          aus Pferdefreunden jeden Alters.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="verein.html" class="inline-block rounded-lg bg-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-charcoal transition hover:bg-gold-hover">Über uns</a>
+          <a href="kontakt.html" class="inline-block rounded-lg border border-white/30 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-white/10">Mitglied werden</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 sm:gap-5" data-animate="stagger">
+        <img src="assets/img/collage-fahrgespann.jpg" width="1400" height="792" alt="Fahrgespann mit Pony beim Turnier auf dem Reitplatz" class="w-full rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1" />
+        <img src="assets/img/collage-alsenborn-freundschaft.jpg" width="672" height="593" alt="Zwei Reiterinnen in Alsenborn-Jacken in der Reithalle" class="w-full rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1" />
       </div>
     </div>
-    <div class="mt-14 columns-2 gap-3 sm:columns-3 sm:gap-4 lg:columns-4" data-animate="stagger">
-      <img src="assets/img/collage-fahrgespann.jpg" width="1400" height="792" alt="Fahrgespann mit Pony beim Turnier auf dem Reitplatz" class="mb-3 w-full break-inside-avoid-column rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 sm:mb-4" />
+    <div id="hero-collage" class="mt-6 columns-2 gap-3 sm:mt-8 sm:columns-3 sm:gap-4">
       <img src="assets/img/collage-rosette.jpg" width="933" height="1400" alt="Junge Reiterin mit ihrem Pferd und einer Siegerschleife" class="mb-3 w-full break-inside-avoid-column rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 sm:mb-4" />
       <img src="assets/img/collage-apfel-fuettern.jpg" width="432" height="716" alt="Reiterin füttert ihrem Pferd einen Apfel am Turnierhindernis" class="mb-3 w-full break-inside-avoid-column rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 sm:mb-4" />
-      <img src="assets/img/collage-alsenborn-freundschaft.jpg" width="672" height="593" alt="Zwei Reiterinnen in Alsenborn-Jacken in der Reithalle" class="mb-3 w-full break-inside-avoid-column rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 sm:mb-4" />
       <img src="assets/img/collage-ribbon.jpg" width="933" height="1400" alt="Reiterin auf ihrem Pferd mit roter Siegerschleife" class="mb-3 w-full break-inside-avoid-column rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 sm:mb-4" />
       <img src="assets/img/collage-erste-schritte.jpg" width="421" height="808" alt="Trainerin führt ein Kind auf einem Pony" class="mb-3 w-full break-inside-avoid-column rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 sm:mb-4" />
       <img src="assets/img/collage-feed-bag.jpg" width="933" height="1400" alt="Reiterin auf ihrem Schimmel und ein Helfer mit einem Sack Pferdefutter" class="mb-3 w-full break-inside-avoid-column rounded-xl shadow-lg ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 sm:mb-4" />
@@ -239,8 +243,8 @@
       </div>
       <div>
         <h4 class="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-gold">Folgt uns</h4>
-        <a href="https://www.instagram.com/rfv.poelzig/" target="_blank" rel="noreferrer" class="flex h-10 w-10 items-center justify-center rounded-full bg-[radial-gradient(circle_at_30%_107%,#fdf497_0%,#fdf497_5%,#fd5949_45%,#d6249f_60%,#285aeb_90%)] text-white transition hover:-translate-y-0.5 hover:shadow-lg" aria-label="Instagram">
-          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.11 2.525c.636-.247 1.363-.416 2.427-.465C8.83 2.013 9.185 2 11.615 2h.7zm-.08 1.802h-.471c-2.308 0-2.629.01-3.565.052-1.055.048-1.628.224-2.01.372a3.052 3.052 0 00-1.153.678 3.052 3.052 0 00-.678 1.153c-.148.382-.324.955-.372 2.01-.042.936-.052 1.257-.052 3.565v.471c0 2.308.01 2.629.052 3.565.048 1.055.224 1.628.372 2.01a3.052 3.052 0 00.678 1.153c.336.336.72.574 1.153.678.382.148.955.324 2.01.372.936.042 1.257.052 3.565.052h.471c2.308 0 2.629-.01 3.565-.052 1.055-.048 1.628-.224 2.01-.372a3.052 3.052 0 001.153-.678c.337-.336.574-.72.678-1.153.148-.382.324-.955.372-2.01.042-.936.052-1.257.052-3.565v-.471c0-2.308-.01-2.629-.052-3.565-.048-1.055-.224-1.628-.372-2.01a3.052 3.052 0 00-.678-1.153 3.052 3.052 0 00-1.153-.678c-.382-.148-.955-.324-2.01-.372-.936-.042-1.257-.052-3.565-.052zm0 4.856a4.966 4.966 0 100 9.932 4.966 4.966 0 000-9.932zm0 8.13a3.164 3.164 0 110-6.328 3.164 3.164 0 010 6.328zm5.005-8.133a1.161 1.161 0 100-2.322 1.161 1.161 0 000 2.322z" /></svg>
+        <a href="https://www.instagram.com/rfv.poelzig/" target="_blank" rel="noreferrer" class="flex h-10 w-10 items-center justify-center rounded-full bg-gold/20 text-gold transition hover:bg-gold hover:text-charcoal" aria-label="Instagram">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" /><line x1="17.5" y1="6.5" x2="17.5" y2="6.5" /></svg>
         </a>
       </div>
     </div>
@@ -256,6 +260,7 @@
 </footer>
 
 <script src="assets/js/site.js"></script>
+<script src="assets/js/hero-collage.js"></script>
 <script src="assets/js/motion.js"></script>
 <script src="assets/js/animations.js"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
