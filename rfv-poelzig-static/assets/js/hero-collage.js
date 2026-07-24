@@ -26,8 +26,9 @@
 
     // Narrow screens can't fit all tiles at a legible height in one row, so
     // split into two; anything sm/tablet and up reads fine as a single row.
+    var half = Math.ceil(items.length / 2);
     var rows = width < 640
-      ? [items.slice(0, 3), items.slice(3)]
+      ? [items.slice(0, half), items.slice(half)]
       : [items];
 
     container.className = "mt-6 flex flex-col gap-3 sm:mt-8 sm:gap-4";
